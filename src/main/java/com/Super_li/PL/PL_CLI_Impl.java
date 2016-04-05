@@ -14,6 +14,8 @@ public class PL_CLI_Impl implements PL_CLI {
 		this.truckingCont=truckingCont;
 	}
 	public void run() {
-		driverCont.addDriver("Ofek", 1234567, 'A');
+		driverCont.UpdateDriver(1234567,"Yair", 1234, 'A');
+		truckingCont.addItem("Kaka", 30);
+
 	}
 }

@@ -8,7 +8,9 @@ public class DriverController {
 		this.db_Sql = db_Sql;
 	}
 	public boolean addDriver(String fullName , int id , char driverLicense){
-		db_Sql.addDriver(fullName,id,driverLicense);
-		return true;
+		return db_Sql.addDriver(fullName,id,driverLicense);
+	}
+	public boolean UpdateDriver(int key,String fullName , int id , char driverLicense){
+		return db_Sql.UpdateDriver(key,fullName,id,driverLicense);
 	}
 }
